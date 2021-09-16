@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class TestController {
 
     @RequestMapping("/access")
-    public void testAccess(){
-        System.out.println("访问成功！");
+    public String testAccess(){
+        return "发送消息！！";
     }
 }

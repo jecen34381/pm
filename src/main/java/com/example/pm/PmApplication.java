@@ -3,9 +3,11 @@ package com.example.pm;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.scheduling.annotation.EnableScheduling;
 
-
-@SpringBootApplication(scanBasePackages = "com.example.pm.controller")
+@EnableScheduling
+@SpringBootApplication(scanBasePackages = "com.example.pm")
 public class PmApplication {
 
     public static void main(String[] args) {
